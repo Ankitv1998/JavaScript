@@ -1,0 +1,67 @@
+Reverse a string
+
+Reversing a string
+Send Feedback
+Complete the function reverseString(), which accepts a string as its parameter, reverses it, and returns the string.
+
+
+
+Input
+
+ reverseString("hello");
+
+
+Output
+
+"olleh"
+_____________________________________________________________________________________________________________________________________________________
+//complete the reverseString Function.
+//Do not alter the starter Code.
+
+function reverseString(str){
+//Implement Your function here
+    return str.split('').reverse().join('');
+}
+console.log(reverseString("Hello"));
+//Output : "olleH"
+_____________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________________
+Deleting occurrence of an element
+Send Feedback
+Create a function to delete all the occurrences of an element in an array without using any other array.
+
+The function deleteOccur should take two parameters, an array, and the element to be deleted from the array and it should return the updated array.
+
+
+Input
+
+let arr = [23, 56, 4, 78, 5, 63, 45, 210, 56];
+let ele =56;
+deleteOccur(arr,ele);
+
+
+Output
+
+[23,4,78,5,63,45,210]
+
+_____________________________________________________________________________________________________________________________________________________
+//Complete the deleteOccur function
+//Do not alter the starter Code.
+
+function deleteOccur(arr,ele){
+   //Implement Your function here
+    for(let i=arr.length-1; i>=0;i--)
+        {
+            if(arr[i]===ele)
+                arr.splice(i,1);
+        }
+    return arr;
+}
+
+let arr = [23, 56, 4, 78, 5, 63, 45, 210, 56];
+let ele = 56;
+console.log(deleteOccur(arr,ele));
+//Output: [23,4,78,5,63,45,210];
+_____________________________________________________________________________________________________________________________________________________
+
+
